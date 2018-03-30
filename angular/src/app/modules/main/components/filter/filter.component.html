@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-lg-2">
+      <div class="form-group">
+        <label for="PitchId">Pitch Id</label>
+        <input type="email" class="form-control" id="PitchId" [(ngModel)]="pitchId"
+                placeholder="Pitch Id">
+      </div>
+  </div>
+  <div class="col-lg-4">
+      <div class="form-group">
+        <label for="from">Starts Date</label>
+        <input type="text" class="form-control" id="from" placeholder="Starts" [(ngModel)]="starts" >
+      </div>                        
+  </div>
+  <div class="col-lg-4">
+    <div class="form-group">
+      <label for="to">Ends Date</label>
+      <input type="text" class="form-control" id="to" placeholder="Ends" [(ngModel)]="ends" >
+    </div>                          
+  </div>
+  <div class="col-lg-2">
+    <div class="form-group">
+      <label for="search"></label>
+      <br>
+      <button type="button" class="btn btn-default" id="search" (click)="search()" >
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </div>                           
+  </div>
+</div>
