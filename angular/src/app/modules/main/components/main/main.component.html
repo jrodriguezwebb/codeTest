@@ -1,0 +1,18 @@
+<div class="row interface">
+  <div class="col-md-12">
+    <div class="container">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Code Test</div>
+          <div class="panel-body">   
+            <div class="panel panel-default">
+              <div class="panel-heading">              
+                <app-filter (filterOptions)="list($event)"></app-filter>
+              </div>
+              <app-data-table [pitches]="pitches"></app-data-table>
+            </div>      
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<app-modal [message]="error"></app-modal>

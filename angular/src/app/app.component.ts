@@ -9,11 +9,6 @@ export class AppComponent implements OnInit {
   title = 'app';
 
   ngOnInit(){
-    const configs = {
-      format: 'yyyy-mm-dd',
-      autoclose: true
-    }
-    $('#from').datepicker(configs);
-    $('#to').datepicker(configs);
+    
   }
 }
